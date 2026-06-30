@@ -1,10 +1,10 @@
 # Bianco Tech Store
 
-Este projeto e uma API REST simples feita em Spring Boot para a loja ficticia Bianco Tech Store.
+Este projeto é uma API REST simples feita em Spring Boot para a loja fictícia Bianco Tech Store.
 
-A Bianco Tech Store vende produtos de informatica, como notebooks, SSDs, mouses, teclados, memorias RAM e acessorios de tecnologia.
+A Bianco Tech Store vende produtos de informática, como notebooks, SSDs, mouses, teclados, memórias RAM e acessórios de tecnologia.
 
-O objetivo do projeto e controlar clientes, produtos e pedidos usando endpoints JSON que podem ser testados no Postman.
+O objetivo do projeto é controlar clientes, produtos e pedidos usando endpoints JSON que podem ser testados no Postman.
 
 ## Tecnologias usadas
 
@@ -18,11 +18,11 @@ O objetivo do projeto e controlar clientes, produtos e pedidos usando endpoints 
 
 ## Estrutura do projeto
 
-O projeto usa a estrutura minima pedida na atividade:
+O projeto usa a estrutura mínima pedida na atividade:
 
 - `model`: classes que representam as entidades do sistema.
 - `repository`: interfaces que acessam o banco de dados.
-- `controller`: classes que recebem as requisicoes da API REST.
+- `controller`: classes que recebem as requisições da API REST.
 
 Pacote base:
 
@@ -46,14 +46,14 @@ Exemplo JSON:
 
 ```json
 {
-  "nome": "Bianca123456",
+  "nome": "Bianco123456",
   "clienteDesde": "2026-06-28"
 }
 ```
 
 ### Produto
 
-Representa um produto de informatica vendido pela loja.
+Representa um produto de informática vendido pela loja.
 
 Campos:
 
@@ -75,8 +75,8 @@ Exemplo JSON:
 Outros exemplos de produtos:
 
 - Mouse Gamer Logitech
-- Teclado Mecanico Redragon
-- Memoria RAM 8GB DDR4
+- Teclado Mecânico Redragon
+- Memória RAM 8GB DDR4
 - Notebook Dell Latitude
 
 ### Pedido
@@ -195,7 +195,7 @@ Content-Type: application/json
 
 ## Banco de dados
 
-Configuracao usada no arquivo `application.properties`:
+Configuração usada no arquivo `application.properties`:
 
 - Banco: `biancotechstore_db`
 - Porta: `3306`
@@ -206,15 +206,14 @@ Configuracao usada no arquivo `application.properties`:
 
 ## Decisoes do projeto
 
-- O projeto usa `controller`, `model` e `repository` para seguir a arquitetura minima pedida.
+- O projeto usa `controller`, `model` e `repository` para seguir a arquitetura mínima pedida.
 - O `Pedido` usa `clienteId` e `produtoId` simples para manter compatibilidade com o DER simplificado.
-- Nao foi criado front-end porque o trabalho pede uma API REST testada no Postman.
-- Nao foi criada autenticacao porque nao faz parte do escopo da atividade.
-- O foco foi cumprir os endpoints obrigatorios e os testes no Postman.
+- Ausência de front-end pelo trabalho necessitar de uma API REST testada no Postman.
+- Não foi criada autenticação por não ser do escopo da atividade.
 
 ## Como rodar
 
-1. Abra o MySQL e confira se o usuario `root` usa a senha `root`.
+1. Abra o MySQL e confira se o usuário `root` usa a senha `root`.
 2. Abra o terminal na pasta do projeto.
 3. Rode o comando:
 
